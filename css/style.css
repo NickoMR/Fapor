@@ -24,14 +24,14 @@
     padding: 0;
     margin: 0;
 }
+.container{
+    max-width: 1093px;
+    margin: auto;
+}
 header{
     background-color: #24282f;
     padding-top: 29px;
     font-family: 'Open Sans';
-}
-.container{
-    max-width: 1093px;
-    margin: auto;
 }
 .logo{
     float: left;
@@ -321,9 +321,9 @@ footer .underfooter .soc:hover{
     position: relative;
     bottom: 135px;
     right: 450px;
- }
+}
 .owl-nav .owl-prev{
-    font-family: "Font Awesome 5 Free"; !important;
+    font-family: "Font Awesome\ 5 Free"!important;
 }
 .owl-nav .owl-next:before{
     content: "\f054";
@@ -332,5 +332,96 @@ footer .underfooter .soc:hover{
     left: 450px;
 }
 .owl-nav .owl-next{
-    font-family: "Font Awesome 5 Free"; !important;
+    font-family: "Font Awesome\ 5 Free"!important;
+}
+
+/*login page*/
+
+.login_bg{
+    background-image:url("../images/bg_login.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding-bottom: 420px;
+}
+.left_side{
+    float:left;
+    max-width: 480px;
+    width: 100%;
+    padding-top: 100px;
+}
+.right_side{
+    float: right;
+    max-width: 450px;
+    width: 100%;
+    padding-top: 100px;
+}
+.login_bg h4{
+    font: 12px/12px 'Open Sans';
+    font-weight: 700;
+    color: #434343;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+.login_bg h4:nth-child(2):after{
+    content: "";
+    display: block;
+    width: 110px;
+    height: 1px;
+    background-color: #000000;
+    margin-bottom: 6px;
+    margin-top: 34px;
+}
+.login_bg .left_side form .form_group{
+    max-width: 450px;
+}
+.login_bg .left_side form .form_group label{
+    display: block;
+    font: 12px/12px 'Open Sans';
+    color: #494031;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: 600;
+
+}
+.login_bg .left_side form .form_group input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 35px;
+    border: none;
+}
+.login_bg .left_side form  button{
+    width: 190px;
+    height: 38px;
+    background-color: #e7cfa6;
+    border-radius: 20px;
+    border: none;
+    font: 12px/12px 'Open Sans';
+    color: #434343;
+    font-weight: 700;
+    float: left;
+    margin-top: 12px;
+}
+.login_bg .left_side form .forgot{
+    font-size: 10px;
+    color: #434343;
+    font-weight: 700;
+    margin-top: 25px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'Open Sans';
+    float: right;
+}
+.login_bg .left_side:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.login_bg .right_side h4{
+    margin-bottom: 45px;
+}
+@media only screen and(max-width: 760px){
+    .left_side, .right_side{
+        float: none
+    }
 }
