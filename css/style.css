@@ -335,7 +335,11 @@ footer .underfooter .soc:hover{
     font-family: "Font Awesome\ 5 Free"!important;
 }
 
+
+
 /*login page*/
+
+
 
 .login_bg{
     background-image:url("../images/bg_login.png");
@@ -424,4 +428,64 @@ footer .underfooter .soc:hover{
     .left_side, .right_side{
         float: none
     }
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active{
+    background-color: #e7cfa6;
+    border: none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: none;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+    padding: 16px 26px;
+}
+.ui-state-default:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #e5e5e5;
+    position: absolute;
+    bottom: 0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active:after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #e7cfa6;
+    position: absolute;
+    left: 42%;
+    top: 80%;
+    transform: rotate(45deg);
+}
+.ui-corner-all, .ui-corner-top .ui-corner-all, .ui-corner-top{
+    border-top-right-radius: 0;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl{
+    border-top-left-radius: 0;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+    font: 12px/12px 'Open Sans';
+    color: #434343;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover{
+    font: 12px/12px 'Open Sans';
+}
+.ui-widget-header{
+    background-color: #ffffff;
+    border: none;
+}
+.ui-tabs .ui-tabs-nav li{
+    margin: 0 20px 0 0;
+}
+.ui-tabs .ui-tabs-nav{
+    margin: 0;
+    padding: 0;
+}
+.ui-tabs{
+    padding: 0;
+}
+.ui-widget.ui-widget-content{
+    border: none;
 }
