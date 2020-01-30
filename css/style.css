@@ -468,7 +468,8 @@ footer .underfooter .soc:hover{
     height: 16px;
     background-color: #e7cfa6;
     position: absolute;
-    left: 42%;
+    left: 50%;
+    margin-left: -8px;
     top: 80%;
     transform: rotate(45deg);
 }
@@ -538,4 +539,8 @@ footer .underfooter .soc:hover{
     display: block;
     clear: both;
 }
-
+section div p{
+    color: #000000;
+    font: 12px/12px 'Open Sans';
+    font-weight: 700;
+}
