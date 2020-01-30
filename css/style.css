@@ -348,6 +348,12 @@ footer .underfooter .soc:hover{
     background-size: cover;
     padding-bottom: 420px;
 }
+@media only screen and(max-width: 760px){
+    .left_side, .right_side{
+        float: none;
+        display: block;
+    }
+}
 .left_side{
     float:left;
     max-width: 480px;
@@ -425,11 +431,7 @@ footer .underfooter .soc:hover{
 .login_bg .right_side h4{
     margin-bottom: 35px;
 }
-@media only screen and(max-width: 760px){
-    .left_side, .right_side{
-        float: none
-    }
-}
+
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
     text-decoration: none;
     border-bottom: 3px solid #e5e5e5;
