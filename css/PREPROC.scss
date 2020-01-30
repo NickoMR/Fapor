@@ -1,0 +1,84 @@
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@import "https://jqueryui.com/resources/demos/style.css";
+@import "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css";
+@import "https://use.fontawesome.com/releases/v5.0.7/css/all.css";
+@import "https://fonts.googleapis.com/css?family=Raleway:600&display=swap";
+@import "https://kit.fontawesome.com/22e5461dc0.js";
+@import "style.css";
+
+
+$base-color: grey;
+$base-font: 14px;
+$base_font_family: 'Font Awesome 5 Free';
+
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+body{
+  background-color: $base-color;
+}
+
+
+.block_users{
+  font-size: $base-font;
+  color: $base-color;
+  p{
+    line-height: 20px;
+    color: white;
+    span{
+      &:hover{
+        color: green;
+      }
+      &:after{
+        content: "";
+        display: block;
+        width: 50px;
+        height: 10px;
+        background-color: yellow;
+        position: absolute;
+        left: 200px;
+      }
+      color: darkred;
+    }
+  }
+}
+.block_black{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  @include transform(rotate (30deg));
+  @include max-screen(560px){
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+  }
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.about{
+  .container2{
+    @extend .container;
+    background-color: darkred;
+    max-width: 1100px;
+  }
+}
+
+.animation{
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+

@@ -1,0 +1,58 @@
+@import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
+@import "https://jqueryui.com/resources/demos/style.css";
+@import "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css";
+@import "https://use.fontawesome.com/releases/v5.0.7/css/all.css";
+@import "https://fonts.googleapis.com/css?family=Raleway:600&display=swap";
+@import "https://kit.fontawesome.com/22e5461dc0.js";
+@import url(style.css);
+body {
+  background-color: grey; }
+
+.block_users {
+  font-size: 14px;
+  color: grey; }
+  .block_users p {
+    line-height: 20px;
+    color: white; }
+    .block_users p span {
+      color: darkred; }
+      .block_users p span:hover {
+        color: green; }
+      .block_users p span:after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 10px;
+        background-color: yellow;
+        position: absolute;
+        left: 200px; }
+
+.block_black {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  -webkit-transform: rotate 30deg;
+  -ms-transform: rotate 30deg;
+  transform: rotate 30deg; }
+  @media screen and (max-width: 560px) {
+    .block_black {
+      width: 50px;
+      height: 50px;
+      background-color: blue; } }
+
+.container, .about .container2 {
+  max-width: 1170px;
+  margin: auto; }
+
+.about .container2 {
+  background-color: darkred;
+  max-width: 1100px; }
+
+.animation {
+  width: 10px;
+  height: 10px;
+  overflow: hidden; }
+
+/*# sourceMappingURL=PREPROC.css.map */
