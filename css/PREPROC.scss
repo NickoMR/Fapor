@@ -255,6 +255,9 @@ $base_font_family: 'Font Awesome 5 Free';
     margin: 0 8px 0 8px;
   }
 }
+
+//all
+
 @include max-screen(978px){
   .left_side, .right_side{
     float: none;
